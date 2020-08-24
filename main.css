@@ -1,0 +1,656 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*general styling*/
+body{
+    background-color: white;
+}
+
+a {
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+hr {
+    background-color: rgb(226, 226, 226);
+    height: 1px;
+    border: 0px;
+}
+/*navigation bar*/
+.nav-bar {
+    width: 100%;
+    height: 40px;
+    display: inline-flex;
+    border-bottom: 1px solid #c1c5c8;
+    padding-top: 5px;
+    margin: 0px, 10px, 20px;
+    padding-bottom: 0px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.fa-search {
+    width: 500px;
+}
+
+/*logo*/
+#logo {
+    margin-right: 300px;
+}
+
+/*nav-bar buttons*/
+#subscribe {
+    background-color: rgb(86, 123, 149);
+    color: white;
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgb(50, 104, 145);
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700; 
+    font-size: 12px;   
+}
+
+#log-in {
+    background-color: rgb(86, 123, 149);
+    color: white;
+    width: 60px;
+    height: 30px;
+    border: 1px solid rgb(50, 104, 145);
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700; 
+    font-size: 12px;
+    line-height: 20px;   
+}
+/*end of nav-bar*/
+
+/*heading*/
+.space {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-style: oblique;
+    font-weight: 700;
+    font-stretch: 100%;
+    max-width: 600px;
+    width: 600px;
+    line-height: 45px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 400px;
+    margin-right: 340px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    vertical-align: baseline;
+    position: relative;
+}
+/*image*/
+#space-ripples  {
+    display: block;
+    margin: 0 auto;
+}
+/*span*/
+.Alan-Guth {
+    display: block;
+    max-width: 700px;
+    width: 700px;
+    margin-left: 142px;
+    margin-right: 500px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: 100%;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.Rick-Friedman {
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+}
+/*main body*/
+.by-Dennis {
+    margin-left: 340px;
+    margin-top: 40px;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#Dennis {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(136, 136, 136);
+    cursor: pointer;
+}
+/*article container*/
+.article-container {
+    width: 600px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgb(51, 51, 51);
+}
+/*list*/
+.social-media li {
+    display:inline-flex;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/*Date*/
+.March {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    list-style-position: outside;
+    padding-top: 20px;
+}
+/*media links*/
+.float-right {
+    float: right;
+}
+
+.fa-facebook, .fa-twitter, .fa-envelope, .fa-share, .fa-bookmark-o, .fa-comment-o {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fa-bookmark-o, .fa-comment-o {
+    font-size: 30px;
+}
+
+.fa-facebook, .fa-twitter, .fa-envelope, .fa-share {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 100%;
+    padding: 8px;
+  
+}
+
+.fa-facebook:hover {
+    background-color: white;
+}
+
+.fa-twitter:hover {
+    background-color: white;
+}
+
+.fa-envelope:hover {
+    background-color: white;
+}
+
+.fa-share:hover {
+    background-color: white;
+}
+
+.fa-comment-o:hover {
+    background-color: white;
+}
+
+.fa-bookmark-o:hover {
+    background-color: white;
+}
+/*text links inside the article*/
+.text-link {
+    color: rgb(50, 104, 145);
+    text-decoration: underline;
+    text-decoration-color: rgb(204, 204, 204);
+}
+/*thanks and subscribe section*/
+.Thanks {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#subscribe-link {
+    color: rgb(50, 104, 145);
+}
+
+.divider{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+/*heading*/
+.as-big {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*the theory of inflation section*/
+.theory {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+/*main container*/
+.inflation-theory-container {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/*summary text*/
+.summary{
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    font-weight: 400;
+    width: 830px;
+}
+/*rows*/
+.inflation-row {
+    padding: 10px;
+    margin: 0;
+}
+
+
+.inflation-column, .inflation-column-p {
+    box-sizing: border-box;
+    display: table-cell;
+    padding: 0 5px;  /*0px top and bottom padding, 5px left and right padding*/
+    width: 25%;
+}
+/*picture columns*/
+.inflation-column{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/*paragraph columns*/
+.inflation-column-p {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+strong {
+    font-weight: 700;
+    font-size: 12px;
+}
+/* horizontal divider*/
+.divider-Larry {
+    width: 100px;
+    float: left;
+    color: black;
+}
+/*credits*/
+.Larry {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.second-big-container{
+    width: 600px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgb(51, 51, 51);
+}
+/*video description*/
+.Dr-Linde{
+    display: block;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: 100%;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    line-height: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+/*video credits*/
+.credits {
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+}
+/*heading*/
+.spirals {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+/*span*/
+.Bicep2 {
+    display: block;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: 100%;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    line-height: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+/*heading*/
+.special {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+/*span*/
+.info {
+    display: block;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: 100%;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    line-height: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+/*links*/
+.underline-link {
+    text-decoration: underline;
+    color: rgb(102, 102, 102);
+}
+
+.underline-link:hover {
+    text-decoration: none;
+}
+/*comments button*/
+#read-comments {
+    background-color: rgb(86, 123, 149);
+    color: white;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(50, 104, 145);
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700; 
+    font-size: 16px; 
+    margin-right: 100px;
+    cursor: pointer;
+}
+/*photos and headlines container*/
+.space-pics-container {
+    display: flex;
+    width: 95%;
+    max-width: 95%;
+    margin: 50px auto;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 22px;
+    box-sizing: border-box;
+    color: rgb(18, 18, 18);
+}
+/*headings*/
+.astronomy, .popular {
+    font-weight: 700;
+    font-size: 18px;
+    border-top: 1px solid rgb(102, 102, 102);
+    padding-top: 20px;
+}
+
+.left-section {
+    margin-right: 30px;
+    flex: 1;
+}
+
+.right-section {
+    flex: 1;
+}
+
+.row-one, .row-two, .row-three, .row-four, .row-five, .row-six {
+    margin: 10px 0;
+}
+/*columns*/
+.column, .column-p {
+    display: table-cell;
+    padding: 10px;
+    width: 33.33333%;
+}
+/*span pics credits*/
+.pics {
+    display: block;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: 100%;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    line-height: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px; 
+    text-align: right;
+}
+/*span dates*/
+.date {
+    display: block;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: 100%;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    line-height: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px; 
+    text-align: left;
+}
+/*paragraphs columns*/
+.column-p {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+/*images columns*/
+.column {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+/*bottom of page*/
+/*horizontal dividers*/
+.thick {
+    width: 95%;
+    background-color: rgb(226, 226, 226); /*in order to give a hr divide a color you must specify a height and a border of 0*/
+    height: 1px;
+    border: 0px;
+}
+#bottom-logo {
+    margin-left: 30px;
+}
+
+.home-page {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: rgb(86, 123, 149)
+}
+/*bottom main container*/
+.bottom-container {
+    width: 95%;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/*columns*/
+.bottom-column {
+    display: table-cell;
+    width: 16.66666%;
+    padding-left: 0px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.bottom-container li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.bottom-container a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(102, 102, 102);
+}
+/*headings*/
+.h5 {
+    font-size: 14px;
+    font-weight: 700;
+}
+/*vertical seperation*/
+.vl {
+    border-right: 1px solid rgb(226, 226, 226); /*in order to create a vertical line you must specify a border left or right*/
+    margin-right: 10px;
+}
+/*horizontal seperation*/
+.education-mobile {
+    width: 200px;
+    background-color: rgb(226, 226, 226);
+    height: 1px;
+    border: 0px;
+}
+
+.h4 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.small-font {
+    font-size: 12px;
+    font-weight: 400;
+}
+/*footer*/
+/*horizontal seperation*/
+.last-line {
+    width: 95%;
+    background-color: rgb(226, 226, 226);
+    height: 1px;
+    border: 0px;
+}
+
+.footer {
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer li {
+    display: inline-block;
+    padding: 5px; 
+}
+.footer li:hover {
+    text-decoration: underline;
+}
+/*footer bar*/
+.footer-bar{
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid black;
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+}
+
+.access {
+    text-align: center;
+    padding: 20px;
+    margin-left: 400px;
+    margin-right: 200px;
+    font-weight: 500;
+    
+}
+
+.expand {
+    float: right;
+    padding: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.fa-angle-up {
+    float: right;
+    font-size: 30px;
+    padding: 10px 20px 20px;
+    font-weight: 500;
+}
